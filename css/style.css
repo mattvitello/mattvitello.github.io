@@ -1,317 +1,111 @@
-html {
-    min-height:100%;
-    position: relative;
-}
-body{
-    margin-bottom: 100px;
-}
-.home-menu{
-    margin-top:22px;
-    margin-bottom:15px;
-}
-#name{
-    width: 115px;
+body, html {
+    margin: 0px;
+    padding: 0px;
 }
 
-#project1, #project3{
-    float:right;
-}
-
-#project2, #project4{
-    float:left;
-}
-
-#topleft, #bottomleft{
-    padding-right:0px;
-}
-
-#topright, #bottomright{
-    padding-left:0px;
-}
-
-@media (min-height: 0px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 57%;
-    }
-}
-
-@media (min-height: 615px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 57%;
-    }
-}
-@media (min-height: 715px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 49%;
-    }
-}
-@media (min-height: 815px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 43%;
-    }
-}
-@media (min-height: 915px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 38%;
-    }
-}
-@media (min-height: 1015px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 34%;
-    }
-}
-@media (min-height: 1115px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 31%;
-    }
-}
-@media (min-height: 1215px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 29%;
-    }
-}
-@media (min-height: 1315px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 27%;
-    }
-}
-@media (min-height: 1415px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 25%;
-    }
-}
-@media (min-height: 1515px) {
-    #square{
-        margin: auto;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        width: 47.5%;
-        height: 24%;
-    }
-}
-
-
-.face {
-    position: absolute;
-    width: 100%;
+body {
+    background: #ffffff;
+    color: #000000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
     height: 100%;
-    -webkit-backface-visibility: visible; 
-    
-    -webkit-transform-origin: 0 0;
-}
-.front {
-    -webkit-transform: rotateY(0deg);
-    z-index: 2;
-    background: #d9d9d9;
+    line-height: 1.5;
+    width: 100%;
 }
 
-@media (min-width: 0px) {
-    iframe{
-        height: 145px;
-    }
-    #project1, #project2, #project3, #project4{
-        width:145px;
-    }
-    .box-scene {
-        -webkit-perspective: 700;
-        width: 145px;
-        height: 145px;
-        margin: auto;
-        z-index: 999;
-    }
-    .box {
-        width: 145px;
-        height: 145px;
-        position: relative;
-        
-        -webkit-transform-style: preserve-3d;
-        
-        -webkit-transition: all 0.4s ease-out;
-        -webkit-transform-origin: 90px 90px -90px;  
-    }
-    .side {
-        background: transparent;
-        -webkit-transform: rotateY(90deg);
-        z-index: 1;
-        left: 145px;
-    }
-    #footer{
-        position: absolute;
-        bottom: 0;
-        width: 85%;
-        height: 50px;
-    }
+p{
+    cursor: default;
+}
+p, a{
+    font-size:12px;
+    line-height: 18px;
+    color:#000 !important;
+    text-decoration: none !important;
 }
 
-@media (min-width: 390px) {
-    iframe{
-        height: 175px;
-    }
-    #project1, #project2, #project3, #project4{
-        width:175px;
-    }
-    .box-scene {
-        -webkit-perspective: 700;
-        width: 175px;
-        height: 175px;
-        margin: auto;
-        z-index: 999;
-    }
-    .box {
-        width: 175px;
-        height: 175px;
-        position: relative;
-        
-        -webkit-transform-style: preserve-3d;
-        
-        -webkit-transition: all 0.4s ease-out;
-        -webkit-transform-origin: 90px 90px -90px;  
-    }
-    .side {
-        background: transparent;
-        -webkit-transform: rotateY(90deg);
-        z-index: 1;
-        left: 175px;
-    }
-    #footer{
-        position: absolute;
-        bottom: 0;
-        width: 88%;
-        height: 50px;
-    }
+ul{
+    padding-left: 0;
 }
-@media (min-width: 500px) {
-    #footer{
-        position: absolute;
-        bottom: 0;
-        width: 90%;
-        height: 50px;
-    }
-}
-@media (min-width: 600px) {
-    #footer{
-        position: absolute;
-        bottom: 0;
-        width: 92%;
-        height: 50px;
-    }
-}
-@media (min-width: 700px) {
-    #footer{
-        position: absolute;
-        bottom: 0;
-        width: 95%;
-        height: 50px;
-    }
-}
-
-@media (min-width: 900px) {
-    #footer{
-        position: absolute;
-        bottom: 0;
-        width: 98%;
-        height: 50px;
-    }
-}
-
-@media (min-width: 1280px) {
-    #footer{
-    position: absolute;
-    bottom: 0;
-    width: 98%;
-    height: 50px;
-}
-}
-
-/*.tr_wrap iframe, .br_wrap iframe{
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-    filter: FlipH;
-    -ms-filter: "FlipH";
-}*/
-
-
-#footer .col-12 ul li{
+li{
     display:inline;
-    padding-left: 25px;
-}
-#footer .col-12 ul li a{
-    font-size: 0.68em;
-    color: #000;
+    margin-right:10px;
 }
 
+li:hover{
+    background: #ffff66;
+    text-decoration: none;
+}
+
+.coll{
+    height: 125px;
+    width: 170px;
+    background-color: yellow;
+    margin-right: 15px;
+    padding-left:0px;
+    padding-right:0px;
+    margin-bottom: 15px;
+}
+
+.coll img{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition: opacity 0.2s ease-in-out;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-filter: grayscale(100%);
+    -webkit-transition: .2s ease-in-out;
+    -moz-filter: grayscale(100%);
+    -moz-transition: .2s ease-in-out;
+    -o-filter: grayscale(100%);
+    -o-transition: .2s ease-in-out;
+}
+
+.coll img:hover{
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-filter: grayscale(0%);
+    -webkit-transition: .5s ease-in-out;
+    -moz-filter: grayscale(0%);
+    -moz-transition: .5s ease-in-out;
+    -o-filter: grayscale(0%);
+    -o-transition: .5s ease-in-out;
+    filter: grayscale(0%);
+}
+
+@media (min-width: 00px){
+    .row{
+        width: 100%;
+    }
+}
+
+@media (min-width: 800px){
+    .row{
+        width: 80%;
+    }
+}
+
+@media (min-width: 1006px){
+    .row{
+        width: 60%;
+    }
+}
+
+#title, #footer, #content{
+    position: relative;
+    margin-left: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+}
+#title{
+    margin-bottom:0px;
+    margin-top: 35px;
+}
+
+#footer{
+    margin-bottom: 15px;
+}
