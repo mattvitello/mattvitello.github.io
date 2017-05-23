@@ -93,6 +93,22 @@ li:hover{
     }
 }
 
+@media (min-width: 1310px){
+    .row{
+        width: 50%;
+    }
+}
+@media (min-width: 1550px){
+    .row{
+        width: 40%;
+    }
+}
+@media (min-width: 1920px){
+    .row{
+        width: 35%;
+    }
+}
+
 #title, #footer, #content{
     position: relative;
     margin-left: 50px;
