@@ -3,56 +3,129 @@
 <head>
   <meta charset="utf-8">
   <title>Roy Blair</title>
-  <meta name="description" content="Roy Blair fan club">
+  <meta name="description" content="Roy Blair">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-</head>
+  <link rel="icon" href="img/catheaven.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/flickity.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <body>
-  <div id="title">
-    <div class="row">
-      <p>ROY BLAIR</p>
-    </div>
-  </div>
-  <div id="footer">
-    <div class="row">
-      <ul>
-        <li><a href="https://twitter.com/royblair_">twitter</a></li>
-        <li><a href="https://www.instagram.com/royblair_/">instagram</a></li>
-        <li><a href="https://soundcloud.com/royblair">soundcloud</a></li>
-      </ul>
-    </div>
-  </div>
-  <div id="content">
-    <div class="row">
-      <div class="coll">
-        <a href="https://soundcloud.com/royblair/shell"><img src="img/shell.jpg" style="width: 100%"/></a>
-      </div>
-      <div class="coll">
-        <a href="https://twitter.com/royblair_/status/861762718218506242"><img src="img/ukvid.jpg"/></a>
-      </div>
-      <!--<div class="coll">
-        <a href="https://soundcloud.com/royblair/unitedkingdom"><img src="img/uk2.jpg"/></a>
-      </div>-->
-      <div class="coll">
-        <a href="https://soundcloud.com/royblair/sucker-demo"><img src="img/sucker2.jpg" /></a>
-      </div>
-      <div class="coll">
-        <a href="https://soundcloud.com/royblair/thunder"><img src="img/thunder2.jpg" /></a>
-      </div>
-      <div class="coll">
-        <a href="https://soundcloud.com/royblair/sets/sunsets"><img src="img/sunsets2.jpg" /></a>
+
+  <div class="container">
+
+    
+    <div id="title">
+      <div class="row">
+        <div class="col-2" style="margin: 0 auto; text-align: center; color: #fff">
+          <img src="img/name.png" id="name"/>
+        </div>
       </div>
     </div>
+    
+    <div class="row">
+      <div class="col-12" style="margin: 0 auto; text-align: center">
+        <img id="shirt" src="img/shirt-transparent.png"/>
+
+        <div class="gallery js-flickity">
+          <div class="gallery-cell">
+            <img id="shirt-m" src="img/shirt4.png" alt="Shirt Back">
+          </div>
+          <div class="gallery-cell">
+            <img id="shirt-m" src="img/shirt5.png" alt="Shirt Back">
+          </div>
+        </div>
+
+
+        <!--<img id="shirt-m" src="img/shirt4.png">-->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="buttons-coll">
+
+        <!--Shopify button -->
+        <div id='product-component-1508436204995' style="padding-bottom: 30px; margin: 0 auto"></div>
+        <script type="text/javascript">
+        /*<![CDATA[*/
+          (function () {
+            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+            if (window.ShopifyBuy) {
+              if (window.ShopifyBuy.UI) {
+                ShopifyBuyInit();
+              } else {
+                loadScript();
+              }
+            } else {
+              loadScript();
+            }
+
+          function loadScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = scriptURL;
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+            script.onload = ShopifyBuyInit;
+          }
+
+          function ShopifyBuyInit() {
+            var client = ShopifyBuy.buildClient({
+              domain: 'mvitello.myshopify.com',
+              apiKey: 'c1bcb9e2540a75715e6d1082bcca8188',
+              appId: '6',
+            });
+
+            ShopifyBuy.UI.onReady(client).then(function (ui) {
+              ui.createComponent('product', {
+                id: [11103977805],
+                node: document.getElementById('product-component-1508436204995'),
+                moneyFormat: '${{amount}}',
+                options: {
+                  "product":{
+                    "variantId":"all","width":"240px","contents":{"img":false,"imgWithCarousel":false,"title":false,"variantTitle":false,"price":false,"description":false,"buttonWithQuantity":false,"quantity":false},
+                    "styles":{
+                      "product":{"@media (min-width: 601px)":{"max-width":"calc(25% - 20px)","margin-left":"20px","margin-bottom":"50px"}},
+                      "button": {
+                        "background-color": "transparent",
+                        "border": "2px solid #000",
+                        "color": "#000",
+                        "font-weight": "600",
+                        "opacity": "0.8",
+                        "margin-bottom": "20px",
+                        ":hover": {"background-color": "transparent"},
+                        ":focus": {"background-color": "#transparent"}
+                      }
+
+                    }
+                  },
+
+                  "cart":{"contents":{"button":true},"styles":{"footer":{"background-color":"#ffffff"}}},
+                  "modalProduct":{"contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"buttonWithQuantity":true,"button":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}}}},
+                  "productSet":{"styles":{"products":{"@media (min-width: 601px)":{"margin-left":"-20px"}}}}},
+              });
+            });
+          }
+        })();
+        /*]]>*/
+        </script>
+      </div>
+    </div>
+    
+    <div id="purchase-btn">
+      <div class="row">
+
+      </div>
+    </div>
+
   </div>
+
 
   <!--Javascript-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script src="js/jquery.iframetracker.js"></script>
+  <!--<script src="js/jquery.iframetracker.js"></script>-->
   <script src="js/main.js"></script>
+  <script src="js/flickity.pkgd.min.js"></script>
 </body>
 </html>
