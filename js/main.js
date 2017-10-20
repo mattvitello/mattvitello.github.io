@@ -15,10 +15,10 @@
             var xClick = event.originalEvent.touches[0].pageX;
             $(this).on("touchmove", function(event){
                 var xMove = event.originalEvent.touches[0].pageX;
-                if( Math.floor(xClick - xMove) > 5 ){
+                if( Math.floor(xClick - xMove) > 10 ){
                     $(this).carousel('next');
                 }
-                else if( Math.floor(xClick - xMove) < -5 ){
+                else if( Math.floor(xClick - xMove) < -10 ){
                     $(this).carousel('prev');
                 }
             });
