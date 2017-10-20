@@ -27,3 +27,10 @@
             });
         });
     });
+
+/*
+    $('#shirt').click(function(){   
+        var href = $('.product__buy').attr('href');
+        window.location.href = href;
+    });
+    */
