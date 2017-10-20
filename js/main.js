@@ -7,7 +7,7 @@
 
     $(document).ready(function() {
         $('.carousel').carousel({
-            interval: 100000000, 
+            interval: 100000000,
             wrap: false
         }).carousel('pause');
 
@@ -27,5 +27,3 @@
             });
         });
     });
-
-
