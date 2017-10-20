@@ -1,6 +1,9 @@
     window.onload = function() {
-        document.getElementById("tune").play();
+        //document.getElementById("tune").play();
+        $('#play-button').click();
     }
+
+    $('#play-button').click(function(){ document.getElementById("tune").play(); });
 
     $(document).ready(function() {
         $('.carousel').carousel({
