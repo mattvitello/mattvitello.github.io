@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108381604-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108381604-1');
+  </script>
   <meta charset="utf-8">
   <title>Roy Blair</title>
   <meta name="description" content="Roy Blair">
@@ -8,127 +16,124 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/catheaven.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/flickity.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <audio id="tune" src="vans_pitched_down.wav" loop="loop"></audio>
+</head>
 
 <body>
 
-  <div class="container">
-
+  <div class="container h-100" style="">
     
-    <div id="title">
-      <div class="row">
-        <div class="col-2" style="margin: 0 auto; text-align: center; color: #fff">
-          <!--<img src="img/name-white.png" id="name"/>-->
-          <P> ROY BLAIR </P>
+    <div class="row h-100 justify-content-center" style="">
+
+      <div class="col-12 align-self-start" id="title">
+        <div class="row justify-content-center">
+            <!--<img src="img/name-white.png" id="name"/>-->
+            <p style="color: #fff"> ROY BLAIR </p>
         </div>
       </div>
-    </div>
-    
-    <div class="row">
-      <div class="col-12" style="margin: 0 auto; text-align: center">
-        <img id="shirt" src="img/shirt-transparent.png"/>
 
-        <div class="gallery js-flickity">
-          <div class="gallery-cell">
-            <img id="shirt-m" src="img/shirt4.png" alt="Shirt Back">
-          </div>
-          <div class="gallery-cell">
-            <img id="shirt-m" src="img/shirt5.png" alt="Shirt Back">
+      <div class="col-12 align-self-center" style="margin-top:-10%;">
+        <div class="row justify-content-center">
+          <img id="shirt" src="img/shirt-transparent.png"/>
+
+          <div id="shirt-carousel" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#shirt-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#shirt-carousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/shirt4.png" alt="Shirt Back" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/shirt6.png" alt="Shirt Back" alt="Second slide">
+              </div>
+            </div>
           </div>
         </div>
-
-
-        <!--<img id="shirt-m" src="img/shirt4.png">-->
       </div>
-    </div>
 
-    <div class="row">
-      <div class="buttons-coll">
 
-        <!--Shopify button -->
-        <div id='product-component-1508436204995' style="padding-bottom: 30px; margin: 0 auto"></div>
-        <script type="text/javascript">
-        /*<![CDATA[*/
-          (function () {
-            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-            if (window.ShopifyBuy) {
-              if (window.ShopifyBuy.UI) {
-                ShopifyBuyInit();
-              } else {
-                loadScript();
-              }
-            } else {
-              loadScript();
-            }
+      <div class="col-12" style="">
+        <div class="buttons-coll">
 
-          function loadScript() {
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = scriptURL;
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-            script.onload = ShopifyBuyInit;
-          }
-
-          function ShopifyBuyInit() {
-            var client = ShopifyBuy.buildClient({
-              domain: 'mvitello.myshopify.com',
-              apiKey: 'c1bcb9e2540a75715e6d1082bcca8188',
-              appId: '6',
-            });
-
-            ShopifyBuy.UI.onReady(client).then(function (ui) {
-              ui.createComponent('product', {
-                id: [11103977805],
-                node: document.getElementById('product-component-1508436204995'),
-                moneyFormat: '${{amount}}',
-                options: {
-                  "product":{
-                    "variantId":"all","width":"240px","contents":{"img":false,"imgWithCarousel":false,"title":false,"variantTitle":false,"price":false,"description":false,"buttonWithQuantity":false,"quantity":false},
-                    "styles":{
-                      "product":{"@media (min-width: 601px)":{"max-width":"calc(25% - 20px)","margin-left":"20px","margin-bottom":"50px"}},
-                      "button": {
-                          "background-color": "transparent",
-                          "border": "2px solid #ffffff",
-                          "color": "#ffffff",
-                          "font-weight": "600",
-                          "border-width":"0 0 2px 0",
-                          "border-radius": "0px",
-                          "padding":"0px 0px 5px 0px",
-                          "opacity": "0.8",
-                          "margin-bottom": "20px",
-                          "outline": "none !important",
-                          ":hover": {"background-color": "transparent"},
-                          ":focus": {"background-color": "transparent"},
+          <!--Shopify button &ndash-->
+          <div id='product-component-1508436204995' style="padding-bottom: 30px; margin: 0 auto"></div>
+          <script type="text/javascript">
+              (function () {
+                  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                  if (window.ShopifyBuy) {
+                      if (window.ShopifyBuy.UI) {
+                          ShopifyBuyInit();
+                      } else {
+                          loadScript();
                       }
+                  } else {
+                      loadScript();
+                  }
 
-                    }
-                  },
+                  function loadScript() {
+                      var script = document.createElement('script');
+                      script.async = true;
+                      script.src = scriptURL;
+                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                      script.onload = ShopifyBuyInit;
+                  }
 
-                  "cart":{"contents":{"button":true},"styles":{"footer":{"background-color":"#ffffff"}}},
-                  "modalProduct":{"contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"buttonWithQuantity":true,"button":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}}}},
-                  "productSet":{"styles":{"products":{"@media (min-width: 601px)":{"margin-left":"-20px"}}}}},
-              });
-            });
-          }
-        })();
-        /*]]>*/
-        </script>
+                  function ShopifyBuyInit() {
+                      var client = ShopifyBuy.buildClient({
+                          domain: 'mvitello.myshopify.com',
+                          apiKey: 'c1bcb9e2540a75715e6d1082bcca8188',
+                          appId: '6',
+                      });
+
+                      ShopifyBuy.UI.onReady(client).then(function (ui) {
+                          ui.createComponent('product', {
+                              id: [11103977805],
+                              node: document.getElementById('product-component-1508436204995'),
+                              moneyFormat: '${{amount}}',
+                              options: {
+                                  "product":{
+                                      "variantId":"all","width":"240px","contents":{"img":false,"imgWithCarousel":false,"title":false,"variantTitle":false,"price":false,"description":false,"buttonWithQuantity":false,"quantity":false},
+                                      "styles":{
+                                          "product":{"@media (min-width: 601px)":{"max-width":"calc(25% - 20px)","margin-left":"20px","margin-bottom":"50px"}},
+                                          "button": {
+                                              "background-color": "transparent",
+                                              "border": "2px solid #ffffff",
+                                              "color": "#ffffff",
+                                              "font-weight": "600",
+                                              "border-width":"0 0 2px 0",
+                                              "border-radius": "0px",
+                                              "padding":"0px 0px 5px 0px",
+                                              "opacity": "0.8",
+                                              "margin-bottom": "20px",
+                                              "outline": "none !important",
+                                              ":hover": {"background-color": "transparent"},
+                                              ":focus": {"background-color": "transparent"},
+                                          }
+
+                                      }
+                                  },
+
+                                  "cart":{"contents":{"button":true},"styles":{"footer":{"background-color":"#ffffff"}}},
+                                  "modalProduct":{"contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"buttonWithQuantity":true,"button":false,"quantity":false},"styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}}}},
+                                  "productSet":{"styles":{"products":{"@media (min-width: 601px)":{"margin-left":"-20px"}}}}},
+                          });
+                      });
+                  }
+              })();
+          </script>
+        </div>
       </div>
     </div>
-    
-    <div id="purchase-btn">
-      <div class="row">
-
-      </div>
-    </div>
-
   </div>
 
 
   <!--Javascript-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <!--<script src="js/jquery.iframetracker.js"></script>-->
   <script src="js/main.js"></script>
   <script src="js/flickity.pkgd.min.js"></script>

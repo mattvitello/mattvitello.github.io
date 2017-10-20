@@ -1,10 +1,27 @@
-    /*
-    $(function(){
-        var x = 0;
-        setInterval(function(){
-            x-=1;
-            $('body').css('background-position', x + 'px 0');
-            $('html').css('background-position', x + 'px 0');
-        }, 30);
-    })
-    */
+    window.onload = function() {
+        document.getElementById("tune").play();
+    }
+
+    $(document).ready(function() {
+        $('.carousel').carousel({
+            interval: 2000
+        }).carousel('pause');
+
+        $(".carousel").on("touchstart", function(event){
+            var xClick = event.originalEvent.touches[0].pageX;
+            $(this).one("touchmove", function(event){
+                var xMove = event.originalEvent.touches[0].pageX;
+                if( Math.floor(xClick - xMove) > 5 ){
+                    $(this).carousel('next');
+                }
+                else if( Math.floor(xClick - xMove) < -5 ){
+                    $(this).carousel('prev');
+                }
+            });
+            $(".carousel").on("touchend", function(){
+                $(this).off("touchmove");
+            });
+        });
+    });
+
+

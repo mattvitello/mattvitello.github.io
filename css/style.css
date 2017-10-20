@@ -1,49 +1,28 @@
-
+html, body{
+    height:100%;
+}
 
 body {
     margin: 0px;
     padding: 0px;
 
-    background: url("../img/bg2.jpg");  // repeat;  //bg8 pink many , bg6 b&w many, bg2 full face blue, bg9 full face b&w
+    background: url("../img/bg2.jpg"), url("../img/bg11.jpg"), url("../img/bg9.jpg");  // repeat;  //bg8 pink many , bg6 b&w many, bg2 full face blue, bg9 full face b&w
     background-repeat: repeat;
-    //background-size: 450px;
-/*
+    /*background-size: 450px;*/
+
     animation: slides 35s linear infinite;
     -webkit-animation: slides 35s ease-in infinite;
     -moz-animation: slides 35s linear infinite;
     -o-animation: slides 35s linear infinite;
     -ms-animation: slides 35s linear infinite;
-*/
+
 }
-
-
-@-webkit-keyframes slides {
-    from {
-        background: url("../img/bg2.jpg");
-        background-size: cover;
-    }
-    33% {
-        background: url("../img/bg11.jpg");
-        background-size: cover;
-        animation-delay: 10s;
-    }
-    66% {
-        background: url("../img/bg9.jpg");
-        background-size: cover;
-    }
-    to {
-        background: url("../img/bg2.jpg");
-        background-size: cover;
-    }
-}
-
 
 .next, .previous{
     display: none;
 }
 .gallery-cell {
   width: 100%;
-  height: 200px;
   margin-right: 10px;
   background: transparent;
   counter-increment: gallery-cell;
@@ -53,13 +32,12 @@ body {
 .gallery-cell:before {
   display: block;
   text-align: center;
-  line-height: 200px;
   font-size: 80px;
 }
 
 .buttons-coll{
     text-align: center;
-    margin-top:60px;
+    margin-top:30px;
 }
 .custom-btn {
   padding: 10px 30px;
@@ -89,12 +67,30 @@ body {
     margin: 0 !important;
 }
 
+#shirt{
+    width:80%;
+    align-self:center;
+}
+
+ol.carousel-indicators{
+    bottom:-40px;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active{
+    width:8px;
+    height:8px;
+    border-radius:50%;
+
+}
+
+
 
 /* width */
 @media only screen and (min-width: 0px) {
     #shirt{
         width: 100%;
-    } 
+    }
     #shirt-m{
         width: 100%;
     }
@@ -104,8 +100,8 @@ body {
 @media only screen and (min-width: 5px) {
     #shirt{
         display: none;
-    } 
-    .gallery{
+    }
+    #shirt-carousel{
         display: block;
     }
     body{
@@ -117,8 +113,24 @@ body {
     #name{
         width: 25%;
     }
-    .flickity-viewport{
-        height: 560px !important;
+    @-webkit-keyframes slides {
+        from {
+            background: url("../img/bg2.jpg");
+            background-size: contain;
+        }
+        33% {
+            background: url("../img/bg11.jpg");
+            background-size: contain;
+            animation-delay: 10s;
+        }
+        66% {
+            background: url("../img/bg9.jpg");
+            background-size: contain;
+        }
+        to {
+            background: url("../img/bg2.jpg");
+            background-size: contain;
+        }
     }
 }
 
@@ -162,10 +174,7 @@ body {
 
 @media only screen and (min-width: 600px) {
     #shirt-m{
-        width:80%;
-    }
-    .flickity-viewport{
-        height: 450px !important;
+        width:83%;
     }
 }
 
@@ -178,7 +187,7 @@ body {
         padding-bottom: 15px;
         display: inline;
     } 
-    .gallery{
+    #shirt-carousel{
         display: none;
     }
     body{
@@ -193,7 +202,26 @@ body {
     #shirt{
         padding-top: 10px;
         padding-bottom: 0px;
-    } 
+    }
+    @-webkit-keyframes slides {
+        from {
+            background: url("../img/bg2.jpg");
+            background-size: cover;
+        }
+        33% {
+            background: url("../img/bg11.jpg");
+            background-size: cover;
+            animation-delay: 10s;
+        }
+        66% {
+            background: url("../img/bg9.jpg");
+            background-size: cover;
+        }
+        to {
+            background: url("../img/bg2.jpg");
+            background-size: cover;
+        }
+    }
 }
 
 /* height */
@@ -202,7 +230,7 @@ body {
         width: 95%;
         padding-top: 0px;
         padding-bottom: 0px;
-    } 
+    }
 }
 
 @media only screen and (max-height: 720px) and (min-width: 1200px) {
@@ -210,15 +238,15 @@ body {
         width: 80%;
         padding-top: 0px;
         padding-bottom: 0px;
-    } 
+    }
 }
 
 @media only screen and (max-height: 600px) and (min-width: 1200px) {
     #shirt{
-        width: 60%;
+        width: 80%;
         padding-top: 0px;
         padding-bottom: 0px;
-    } 
+    }
 }
 
 
