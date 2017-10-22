@@ -17,7 +17,7 @@
   <link rel="icon" href="img/catheaven.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/flickity.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <audio id="tune" src="vans_pitched_down.wav" loop="loop"></audio>
+  <audio id="tune" src="vans_pitched_down.mp3" loop="loop"></audio>
 </head>
 
 <body>
@@ -58,59 +58,9 @@
 
       <div class="col-12" style="">
         <div class="buttons-coll">
-
-          <!--Shopify button &ndash-->
-          <!--
-          <div id='product-component-1508436204995' style=""></div>
-          
-          <script type="text/javascript">
-              (function () {
-                  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-                  if (window.ShopifyBuy) {
-                      if (window.ShopifyBuy.UI) {
-                          ShopifyBuyInit();
-                      } else {
-                          loadScript();
-                      }
-                  } else {
-                      loadScript();
-                  }
-
-                  function loadScript() {
-                      var script = document.createElement('script');
-                      script.async = true;
-                      script.src = scriptURL;
-                      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-                      script.onload = ShopifyBuyInit;
-                  }
-
-                  function ShopifyBuyInit() {
-                      var client = ShopifyBuy.buildClient({
-                          domain: 'mvitello.myshopify.com',
-                          apiKey: 'c1bcb9e2540a75715e6d1082bcca8188',
-                          appId: '6',
-                      });
-                      client.fetchProduct('11103977805').then(function(product) {
-
-                      var html =
-                      
-                      "<a class='product__buy' href='" +
-                        product.selectedVariant.checkoutUrl(1) +
-                      "'></a>";
-
-                      $('#product-component-1508436204995').html(html);
-
-                    });
-
-                  }
-              })();
-          </script>
--->
-<!--
-          <div id='product-component-1508521302471'></div>
+          <div id='product-component-1508522277883' style="padding-bottom: 30px; margin: 0 auto"></div>
           <script type="text/javascript">
           /*<![CDATA[*/
-          
             (function () {
               var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
               if (window.ShopifyBuy) {
@@ -138,160 +88,116 @@
                 appId: '6',
               });
 
-              client.fetchProduct('269973258268').then(function(product) {
+              ShopifyBuy.UI.onReady(client).then(function (ui) {
+                ui.createComponent('product', {
+                  id: [269973258268],
+                  node: document.getElementById('product-component-1508522277883'),
+                  moneyFormat: '${{amount}}',
+                  options: {
+      "product":{"variantId":"all","width":"240px",
+        "contents":{"img":false,"imgWithCarousel":false,"title":false,"variantTitle":false,"price":false,"description":false,"buttonWithQuantity":false,"quantity":false},
+        "styles":{
+                  "product":{"text-align":"center","@media (min-width: 601px)":{"max-width":"calc(25% - 20px)","margin-left":"20px","margin-bottom":"50px"}},
+                         "button": {
+                            "color": "#fff",
+                            "background": "transparent",
+                            "border": "1px solid #fff",
+                            "font-family": "\"WebsiteFont\", \"Helvetica Neue\", Arial",
+                            "font-weight": "bold",
+                            "font-size": "0.9em",
+                            ":hover": {"background-color": "transparent"},
+                            ":focus": {
+                                "background-color": "transparent",
+                                "outline": "0 !important"
+                            },
+                            //"padding":"10px 24px 10px 24px"
+                         },
+                         "options":{
+                             "width": "174px !important"  //140
+                         }
+                      }
+                    },
+                    "option":{
+                      "styles":{
+                          "option":{
+                              "cursor":"pointer",
+                              ":focus":{
+                                  "outline":"0 !important"
+                              }
+                          },
+                          "wrapper":{
+                              "background-color":"transparent",
+                              "border-color":"white",
+                              "border-width":"1px",
+                              "text-align-last":"center",
+                              "text-align":"center",
+                              "vertical-align":"center",
+                              "cursor":"pointer",
+                              ":focus":{
+                                  "outline":"0 !important"
+                              }
+                          },
+                          "select":{
+                              "color":"white",
+                              "font-family": "\"WebsiteFont\", \"Helvetica Neue\", Arial",
+                              "font-weight": "bold",
+                              "font-size": "0.9em",
+                              "margin-left":"-2px",
+                              "cursor":"pointer",
+                              ":focus":{
+                                  "outline":"0 !important"
+                              },
+                              "padding":"7px 5px 7px 5px"
+                          },
+                          "selectIcon":{
+                              "fill":"white",
+                              ":focus":{
+                                  "outline":"0 !important"
+                              }
+                          },
+                          "optionSelected":{
+                            "color": "white"
+                          }
+                      }
+                    },
+                    "cart":{"contents":{"button":true},
+                      "styles":{
+                        "footer":{"background-color":"#ffffff"},
+                        "button":{
+                          "background-color":"transparent",
+                          "color": "black",
+                          "border": "1px solid black"
+                        }
+                      }},
 
-                      var html =
-                      
-                      "<a class='product__buy' href='" +
-                        product.selectedVariant.checkoutUrl(1) +
-                      "'></a>";
+                    "toggle":{
+                      "styles":{
+                        "toggle":{
+                          "background-color": "#ffffff",
+                          ":hover": {"background-color": "#ffffff"},
+                          ":focus": {"background-color": "#ffffff"},
+                          "color": "#000"
+                        },
+                        "iconPath":{
+                          "fill": "#000"
+                        }
+                      }
+                    },
 
-                      $('#product-component-1508521302471').html(html);
+                    "modalProduct":{"contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"buttonWithQuantity":true,"button":false,"quantity":false},
+                      "styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}}}},
 
+                    "productSet":{"styles":{"products":{"@media (min-width: 601px)":{"margin-left":"-20px"}}}}},
                 });
+              });
             }
           })();
           /*]]>*/
           </script>
-        -->
-        
-        <div id='product-component-1508522277883' style="padding-bottom: 30px; margin: 0 auto"></div>
-    <script type="text/javascript">
-    /*<![CDATA[*/
-      (function () {
-        var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-        if (window.ShopifyBuy) {
-          if (window.ShopifyBuy.UI) {
-            ShopifyBuyInit();
-          } else {
-            loadScript();
-          }
-        } else {
-          loadScript();
-        }
-
-      function loadScript() {
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = scriptURL;
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-        script.onload = ShopifyBuyInit;
-      }
-
-      function ShopifyBuyInit() {
-        var client = ShopifyBuy.buildClient({
-          domain: 'roy-blair.myshopify.com',
-          apiKey: 'c4436ef009919a87987bc103df1e3fa1',
-          appId: '6',
-        });
-
-        ShopifyBuy.UI.onReady(client).then(function (ui) {
-          ui.createComponent('product', {
-            id: [269973258268],
-            node: document.getElementById('product-component-1508522277883'),
-            moneyFormat: '${{amount}}',
-            options: {
-"product":{"variantId":"all","width":"240px",
-  "contents":{"img":false,"imgWithCarousel":false,"title":false,"variantTitle":false,"price":false,"description":false,"buttonWithQuantity":false,"quantity":false},
-  "styles":{
-            "product":{"text-align":"center","@media (min-width: 601px)":{"max-width":"calc(25% - 20px)","margin-left":"20px","margin-bottom":"50px"}},
-                   "button": {
-                      "color": "#fff",
-                      "background": "transparent",
-                      "border": "1px solid #fff",
-                      "font-family": "\"WebsiteFont\", \"Helvetica Neue\", Arial",
-                      "font-weight": "bold",
-                      "font-size": "0.9em",
-                      ":hover": {"background-color": "transparent"},
-                      ":focus": {
-                          "background-color": "transparent",
-                          "outline": "0 !important"
-                      },
-                      //"padding":"10px 24px 10px 24px"
-                   },
-                   "options":{
-                       "width": "174px !important"  //140
-                   }
-                }
-              },
-              "option":{
-                "styles":{
-                    "option":{
-                        "cursor":"pointer",
-                        ":focus":{
-                            "outline":"0 !important"
-                        }
-                    },
-                    "wrapper":{
-                        "background-color":"transparent",
-                        "border-color":"white",
-                        "border-width":"1px",
-                        "text-align-last":"center",
-                        "text-align":"center",
-                        "vertical-align":"center",
-                        "cursor":"pointer",
-                        ":focus":{
-                            "outline":"0 !important"
-                        }
-                    },
-                    "select":{
-                        "color":"white",
-                        "font-family": "\"WebsiteFont\", \"Helvetica Neue\", Arial",
-                        "font-weight": "bold",
-                        "font-size": "0.9em",
-                        "margin-left":"-2px",
-                        "cursor":"pointer",
-                        ":focus":{
-                            "outline":"0 !important"
-                        },
-                        "padding":"7px 5px 7px 5px"
-                    },
-                    "selectIcon":{
-                        "fill":"white",
-                        ":focus":{
-                            "outline":"0 !important"
-                        }
-                    }
-                }
-              },
-              "cart":{"contents":{"button":true},
-                "styles":{
-                  "footer":{"background-color":"#ffffff"},
-                  "button":{
-                    "background-color":"transparent",
-                    "color": "black",
-                    "border": "1px solid black"
-                  }
-                }},
-
-              "toggle":{
-                "styles":{
-                  "toggle":{
-                    "background-color": "#ffffff",
-                    ":hover": {"background-color": "#ffffff"},
-                    ":focus": {"background-color": "#ffffff"},
-                    "color": "#000"
-                  },
-                  "iconPath":{
-                    "fill": "#000"
-                  }
-                }
-              },
-
-              "modalProduct":{"contents":{"img":false,"imgWithCarousel":true,"variantTitle":false,"buttonWithQuantity":true,"button":false,"quantity":false},
-                "styles":{"product":{"@media (min-width: 601px)":{"max-width":"100%","margin-left":"0px","margin-bottom":"0px"}}}},
-
-              "productSet":{"styles":{"products":{"@media (min-width: 601px)":{"margin-left":"-20px"}}}}},
-          });
-        });
-      }
-    })();
-    /*]]>*/
-    </script>
-  
+    
+          </div>
         </div>
       </div>
-    </div>
   </div>
 
 
