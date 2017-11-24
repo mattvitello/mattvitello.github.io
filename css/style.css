@@ -1,7 +1,6 @@
 html, body{
     height:100%;
     font-family: Arial !important;
-    background-color: #fcf60c !important;
 }
 
 body {
@@ -13,21 +12,12 @@ a{
     text-decoration: none !important;
 }
 
-.credits-block p{
-    margin-bottom: 5px !important;
-    letter-spacing: 1px;
-    color: #ff0000;
-    text-align: center;
-}
-
 .bold{
     font-weight: bold;
 }
 
 #title{
-    margin-bottom:0px;
-    margin-top: 36px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 #wrap{
@@ -41,21 +31,12 @@ a{
 }
 
 .social{
-    color: #ff0000;
+    color: #000;
     /*font-size: 0.75em;*/
     font-weight: bold;
     font-size: 12px;
     padding-right:30px;
     cursor: pointer;
-}
-
-#name{
-    color: #ff0000;
-    /*font-size: 0.75em;*/
-    font-weight: bold;
-    float: right;
-    letter-spacing: 1px;
-    cursor: default;
 }
 
 #name-img{
@@ -71,61 +52,39 @@ a{
         font-size: 6px;
         padding-right:10px;
     }
-    .credits-block p{
-        font-size: 6px;
-    }
-
     #link-wrap{
         margin:0 auto;
         padding-top: 5px;
     }
+    #art{
+        width: 80%;
+    }
+    #logo-date{
+        width: 52%;
+    }
     
-    #name-img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 70px;
-        margin-top: -15px;
-    }
-    .vid iframe, .credits-block{
-        width: 224px;
-        height: 126px;
-    }
-    #credits{
-        top: -167px;
-        left: -35px;
-        width: 53%;
-    }
-    #name-container{
-        padding-right:15px;
-    }
-    #perfume-img{
-        width: 100px;
-    }
 }
 @media (min-width: 325px){
     .social{
-        font-size: 7px;
-        padding-right:15px;
-    }
-    .credits-block p{
-        font-size: 7px;
+        font-size: 6px;
+        padding-right:10px;
     }
 }
 
 @media (min-width: 351px){
-    .social{
-        padding-right:20px;
-    }
+
 }
 
 @media (min-width: 370px){
-    .social{
-        font-size: 7.3px;
-        padding-right:20px;
+    #art{
+        width: 70%;
     }
-    .credits-block p{
-        font-size: 7.3px;
+    #logo-date{
+        width: 40%;
+    }
+    .social{
+        font-size: 7px;
+        padding-right:15px;
     }
 }
 
@@ -133,101 +92,75 @@ a{
     .social{
         padding-right:20px;
     }
-    .vid iframe, .credits-block{
-        width: 288px;
-        height: 162px;
-    }
-    #credits{
-        top: -212px;
-        left: -46px;
-        width: 53%;
-    }
 }
 
 @media (min-width: 425px){
     .social{
         padding-right:24px;
     }
+    #art{
+        width: 65%;
+    }
+    #logo-date{
+        width: 35%;
+    }
 }
 
 @media (min-width: 521px){
     .social{
-        padding-right:30px;
+        padding-right:25px;
         letter-spacing: 1px;
     }
-    #name-img{
-        width:70px; 
-        margin-top:-1.5px;
-    } 
 }
 
 @media (min-width: 580px){
-    .social, .credits-block p{
+    .social{
         font-size: 10px;
     }
     .col-md-9.order-sm-2.order-md-1{
         padding-left:inherit;
     }
-    .vid iframe, .credits-block{
-        width: 400px;
-        height: 225px;
+    #art{
+        width: 55%;
     }
-    #credits{
-        top: -292px;
-        left: -60px;
-        width: 53%;
-    }
-    #perfume-img{
-        width: 150px;
+    #logo-date{
+        width: 27%;
     }
 }
 
 @media (min-width: 768px){
-
-    #name-img{
-        float:right;
-    }
-    #link-wrap{
-        margin: inherit;
-    }
     .col-md-9.order-sm-2.order-md-1{
         padding-left:30px;
     }
-    .vid iframe, .credits-block{
-        width: 560px;
-        height: 315px;
+    #art{
+        width: 45%;
     }
-    #credits{
-        top: -389px;
-        left: -60px;
-        width: 43%;
-    }
-    #name-container{
-        padding-right:45px
-    }
-    #link-wrap{
-        padding-top: 0px;
+    #logo-date{
+        width: 23%;
     }
 }
 
 @media (min-width: 850px){
-    .social, .credits-block p{
+    .social{
         font-size: 12px;
     }
-}
-
-@media (min-width: 1000px){
-    .vid iframe, .credits-block{
-        width: 720px;
-        height: 405px;
+    #art{
+        width: 49.7%;
     }
-    #credits{
-        top: -517px;
-        width: 53%;
-        left: -100px;
+    #logo-date{
+        width: 23.5%;
     }
 }
 
+@media (min-width: 1100px){
+    #art{
+        width:58%;
+    }
+
+    #logo-date{
+        width: 26%;
+    }
+}
 
 
 
