@@ -49,8 +49,8 @@ a{
 
 @media (min-width: 0px){
     .social{
-        font-size: 6px;
-        padding-right:10px;
+        font-size: 5.2px;
+        padding-right: 8px;
     }
     #link-wrap{
         margin:0 auto;
@@ -64,9 +64,9 @@ a{
     }
     
 }
-@media (min-width: 325px){
+@media (min-width: 326px){
     .social{
-        font-size: 6px;
+        font-size: 5.4px;
         padding-right:10px;
     }
 }
@@ -83,18 +83,18 @@ a{
         width: 40%;
     }
     .social{
-        font-size: 7px;
-        padding-right:15px;
+        font-size: 5.9px;
+        padding-right:13px;
     }
 }
 
 @media (min-width: 395px){
     .social{
-        padding-right:20px;
+        padding-right:18px;
     }
 }
 
-@media (min-width: 425px){
+@media (min-width: 431px){
     .social{
         padding-right:24px;
     }
