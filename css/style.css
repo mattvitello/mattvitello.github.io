@@ -49,8 +49,8 @@ a{
 
 @media (min-width: 0px){
     .social{
-        font-size: 5.2px;
-        padding-right: 8px;
+        font-size: 6px;
+        padding-right:10px;
     }
     #link-wrap{
         margin:0 auto;
@@ -64,9 +64,9 @@ a{
     }
     
 }
-@media (min-width: 326px){
+@media (min-width: 325px){
     .social{
-        font-size: 5.4px;
+        font-size: 6px;
         padding-right:10px;
     }
 }
@@ -83,18 +83,18 @@ a{
         width: 40%;
     }
     .social{
-        font-size: 5.9px;
-        padding-right:13px;
+        font-size: 7px;
+        padding-right:15px;
     }
 }
 
 @media (min-width: 395px){
     .social{
-        padding-right:18px;
+        padding-right:20px;
     }
 }
 
-@media (min-width: 431px){
+@media (min-width: 425px){
     .social{
         padding-right:24px;
     }
@@ -163,4 +163,5 @@ a{
 }
 
 
-
+#form iframe{
+}
