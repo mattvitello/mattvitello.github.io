@@ -1,24 +1,25 @@
-var x = 0;
-var images = [];
-images[0] = "img/artwork.jpg";
-images[1] = "img/artwork2.jpg";
-images[2] = "img/artwork3.jpg";
-images[3] = "img/artwork4.jpg";
 
-function changeImage()
-{
+$(function() {
+  	setTimeout(function() {
+        $("#vid1").hide('blind', {}, 21400)
+    }, 214000);
 
-    var img = document.getElementById('art');
-    img.src = images[x];
-    x++;
-    if(x >= images.length){
-        x = 0;
-    } 
-    setTimeout("changeImage()", 2500);
+    setTimeout(function() {
+        $("#cath").hide('blind', {}, 475)
+    }, 4750);
+
+
+});
+
+//document.addEventListener('touchstart', this.touchstart);
+document.addEventListener('touchmove', this.touchmove);
+
+
+
+function touchmove(e) {
+    e.preventDefault()
 }
 
 
-
-$( document ).ready(function() {
-    changeImage();
-});
+//hide video after it runs
+//
