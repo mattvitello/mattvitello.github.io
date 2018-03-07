@@ -20,8 +20,8 @@
               <a class="button hvr-grow" href="http://open.spotify.com/album/0Z9NeEvqeecaLCFUmI4uDw"><img src="img/spotify-black.png"/></a>
               <a class="button hvr-grow" href="https://soundcloud.com/royblair"><img src="img/soundcloud-logo-black.png"/></a>
               <a class="button hvr-grow" href="https://www.youtube.com/channel/UCa7naaG4ADIbHlz6QOz3MDA"><img src="img/youtube-logo-black.png"/></a>
-              <a class="button hvr-grow" href="https://twitter.com/royblair_"><img src="img/twitter-logo-silhouette-black.png"/></a>
-              <a class="button hvr-grow" href="https://www.instagram.com/royblair_/"><img src="img/instagram-logo-black.png"/></a>
+              <a class="button hvr-grow" href="https://twitter.com/royblair"><img src="img/twitter-logo-silhouette-black.png"/></a>
+              <a class="button hvr-grow" href="https://www.instagram.com/royblair/"><img src="img/instagram-logo-black.png"/></a>
               <a class="button hvr-grow" href="mailto:royblairmgmt@gmail.com"><img id="last" src="img/close-envelope-black.png"/></a>
             </div>
           </div>
