@@ -1,5 +1,5 @@
 #links{
-      margin-top: 2.8%;
+   margin-left: -90px; 
 }
 #links img{
     width: 24px;
@@ -12,16 +12,10 @@
 }
 
 li{
-  color: #ff0000eb;
-  font-weight: 800;
+  color: #fff;
+  font-weight: 400;
   text-align: right;
-  font-size: 1.13em;
   height: 18px;
-  -webkit-transform:scale(1,0.95); /* Safari and Chrome */
-  -moz-transform:scale(1,0.95); /* Firefox */
-  -ms-transform:scale(1,0.95); /* IE 9 */
-  -o-transform:scale(1,0.95); /* Opera */
-  transform:scale(1,0.95); /* W3C */
 }
 
 ul {
@@ -36,37 +30,54 @@ a:hover{
   text-decoration: none !important;
 }
 
-@media (min-width: 600px){
-  #shop-tab:hover::before, #shows-tab:hover::before, #music-tab:hover::before, #credits-tab:hover::before{
-      content:'_ ';
-      color: #ff0000eb;
-      font-weight: 900;
-      font-size: 2em;
-      position: absolute;
-      top:-33px;
-      display:inline-block;
-      -webkit-transform:scale(1,1.7); /* Safari and Chrome */
-      -moz-transform:scale(1,1.7); /* Firefox */
-      -ms-transform:scale(1,1.7); /* IE 9 */
-      -o-transform:scale(1,1.7); /* Opera */
-      transform:scale(1,1.7); /* W3C */
-  }
-  #shop-tab:hover::before{
-      left: -4px;   
-  }
 
-  #shows-tab:hover::before{
-      left: -17px;   
-  }
-
-  #music-tab:hover::before{
-      left: -13px;   
-  }
-
-  #credits-tab:hover::before{
-      left: -20px;  
-  }
+#home-bg{
+    background: url(../img/Lanza_016.jpg) no-repeat center center fixed;;
+    background-size: cover;
+    width:100%;
+    height:100%;
 }
+
+#links{
+    transform: rotate(-90deg);
+    transform-origin: right, top;
+    -ms-transform: rotate(-90deg);
+    -ms-transform-origin: right, top;
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin: right, top;
+}
+
+#links a img{
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+#home-navigation{
+  margin-bottom: 2.5rem;
+}
+#home-navigation a li{
+  display: inline;
+}
+
+#centered-nav{
+  position: absolute;
+  bottom:0;
+  left: 51.5%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#center-title{
+  position: absolute;
+  top: 49%;left: 52.3%;
+}
+.container.h-100 > #center-title{
+  transform: translate(-50%, -50%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, SizingMethod='auto expand')";
+}
+
+
 
 @media(min-width: 0px){
   #shirt-home{
@@ -77,6 +88,18 @@ a:hover{
     -ms-flex: 0 0 82.4% !important;
     flex: 0 0 82.4% !important;
     max-width: 82.4% !important;
+  }
+  #center-title p{
+    font-size:1.8em;
+  }
+  li{
+    font-size: 1em;
+  }
+  #home-navigation a li{
+    margin-right: 33px;
+  }
+  #centered-nav{
+    width: 285.2px;
   }
 }
 
@@ -92,6 +115,22 @@ a:hover{
   }
 }
 
+@media(min-width: 500px){
+  #center-title p{
+    font-size:2.3em;
+  }
+  li{
+    font-size: 1.2em;
+  }
+
+  #home-navigation a li{
+    margin-right: 38px;
+  }
+  #centered-nav{
+    width: 334.7px;
+  }
+}
+
 @media(min-width: 770px){
   #shirt-home{
     width: 40%;
@@ -103,6 +142,12 @@ a:hover{
     max-width: 41.666667% !important;
   }
 }
+
+
+
+
+
+
 
 
 

@@ -1,1 +1,1 @@
-[royblair.com](http://royblair.com)
+# royblair.com
