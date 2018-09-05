@@ -62,6 +62,10 @@ function getFormData() {
   return data;
 }
 
+$( "#gform" ).submit(function( event ) {
+  $(this).hide();
+});
+
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
   var data = getFormData();         // get the values submitted in the form
