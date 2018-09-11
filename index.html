@@ -15,11 +15,13 @@
   <link rel="stylesheet" href="css/style2.css">
   <link rel="icon" href="img/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108381604-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
+
     gtag('config', 'UA-108381604-1');
   </script>
 </head>
@@ -41,29 +43,35 @@
         </div>
          <div class ="col-md-6 order-sm-2 order-md-1" id="social-row">
           <div id="links">
-              <a class="button hvr-grow" href="https://itunes.apple.com/us/album/cat-heaven/1316794586?uo=4&amp;at=1001l3Iq&amp;ct=888915493540"><img id="first" src="img/apple-white2.png"></a>
-              <a class="button hvr-grow" href="http://open.spotify.com/album/0Z9NeEvqeecaLCFUmI4uDw"><img src="img/spotify-white2.png"></a>
-              <a class="button hvr-grow" href="https://soundcloud.com/royblair"><img src="img/soundcloud-logo-white.png"></a>
-              <a class="button hvr-grow" href="https://www.youtube.com/channel/UCa7naaG4ADIbHlz6QOz3MDA"><img src="img/youtube-logo-white.png"></a>
-              <a class="button hvr-grow" href="https://twitter.com/royblair"><img src="img/twitter-logo-silhouette-white.png"></a>
-              <a class="button hvr-grow" href="https://www.instagram.com/royblair/"><img src="img/instagram-logo-white.png"></a>
-              <a class="button hvr-grow" href="mailto:royblairmgmt@gmail.com"><img id="last" src="img/close-envelope-white.png"></a>
+              <a class="button hvr-grow" href="https://itunes.apple.com/us/album/cat-heaven/1316794586?uo=4&amp;at=1001l3Iq&amp;ct=888915493540"><img id="first" src="img/apple-black.png"></a>
+              <a class="button hvr-grow" href="http://open.spotify.com/album/0Z9NeEvqeecaLCFUmI4uDw"><img src="img/spotify-black.png"></a>
+              <a class="button hvr-grow" href="https://soundcloud.com/royblair"><img src="img/soundcloud-logo-black.png"></a>
+              <a class="button hvr-grow" href="https://www.youtube.com/channel/UCa7naaG4ADIbHlz6QOz3MDA"><img src="img/youtube-logo-black.png"></a>
+              <a class="button hvr-grow" href="https://twitter.com/royblair"><img src="img/twitter-logo-silhouette-black.png"></a>
+              <a class="button hvr-grow" href="https://www.instagram.com/royblair/"><img src="img/instagram-logo-black.png"></a>
+              <a class="button hvr-grow" href="mailto:royblairmgmt@gmail.com"><img id="last" src="img/close-envelope-black.png"></a>
             </div>
         </div>
       </div>
       </div>
   </div>
   <div class = "row justify-content-center" style="padding-top:0px !important;height: 100%;"> 
-    <div class="align-self-center" style="margin-top: 305px;">
+    <div class="align-self-center" style="margin-top: 330px;">
+      <div class="col-12" style="text-align: center; margin-top:5px; margin-bottom: 45px;">
+        <img id="happy-img" src="img/happy-font.png">
+      </div>
       <div class="col-12 vid" style="text-align: center">
-        <iframe style="z-index: 3; position: relative;" src="https://www.youtube.com/embed/ZIuxbHOeeA0?rel=0" frameborder="0" allowfullscreen></iframe>
+       <!-- <iframe style="z-index: 3; position: relative;" src="https://www.youtube.com/embed/ZIuxbHOeeA0?rel=0" frameborder="0" allowfullscreen></iframe>-->
+        <iframe style="z-index: 3; position: relative;" src="https://www.youtube.com/embed/gUJr4QVWd7M?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <div class="credits-block" style="margin-top:80px; height: 100% !important;">
           <p class="bold">SONG CREDITS</p>
           <p>(R. BLAIR)</p>
-          <p>PRODUCTION BY ENDER TOI & ROY BLAIR</p>
-          <p>ADDITIONAL PRODUCTION BY FINN ORRELL</p>
-          <p>MIXED AND MASTERED BY BASSY BOB AT BIG BOTTOM MUSIC</p>
-          <p style="padding-bottom: 80px;">PHOTOS BY CHRISTIAN LANZA</p>
+          <p>PRODUCTION - ZACH FOGARTY</p>
+          <p>DRUM PROGRAMMING - ROY BLAIR</p>
+          <p>GUITAR - FINN ORRELL</p>
+          <p>ADDITIONAL PRODUCTION - NATALIE GREEN & ENDER TOI</p>
+          <p>MIX - ZACH FOGARTY</p> 
+          <p style="padding-bottom: 80px;">MASTER - KENNY GOURMET</p>
         </div>
       </div>
     </div>
@@ -75,9 +83,6 @@
         <div class="col-12" style="padding-left:0px; padding-right:0px;">
           Email Sign Up
         </div>
-        <!--<div class="col-6" style="padding-left:0px; padding-right:0px;">
-          <div id="close-form">×</div>
-        </div>-->
       </div>
       <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
       action="https://script.google.com/macros/s/AKfycbxqFP1nC3DE26jxOoHF1kfjnqhnLoo7UZZlxOI7/exec">
@@ -108,6 +113,7 @@
   </div>
 
 <!--Javascript-->
+<script src="js/main.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
@@ -116,103 +122,3 @@
 <!--<script src="js/jquery.iframetracker.js"></script>-->
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="title" content="ROY BLAIR">
-  <meta name="description" content="Roy Blair's debut album, Cat Heaven, out now.">
-  <meta name="keywords" content="roy blair,cat heaven,perfume">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:url" content="http://royblair.com/" />
-  <meta property="og:title" content="ROY BLAIR" />
-  <meta property="og:description" content="Roy Blair's debut album, Cat Heaven, out now."/>
-
-  <title>ROY BLAIR</title>
-  <link rel="icon" href="logo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="../css/lookbook.css">
-  <link rel="stylesheet" href="../css/shows.css">
-  <link rel="stylesheet" href="../css/shop.css">
-  <link rel="stylesheet" href="../css/music.css">
-  <link rel="stylesheet" href="css/jquery.fullpage.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108381604-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-108381604-1');
-  </script>
-</head>
-<body>  
-
-  <div id="main-page">
-
-    <div id="home-bg">
-      <div class="container h-100" style="max-width: 100%;margin: 0;padding: 0;position: relative;display: inline-block;">
-        <div class="row h-100 justify-content-center" style="margin:0;">
-          <div class="col-12 align-self-center">
-            <div class="row">
-              <div id="links">
-                <a class="button hvr-grow" href="mailto:royblairmgmt@gmail.com"><img id="last" src="img/close-envelope-white.png"/></a>
-                <a class="button hvr-grow" href="https://www.instagram.com/royblair/"><img src="img/instagram-logo-white.png"/></a>
-                <a class="button hvr-grow" href="https://twitter.com/royblair"><img src="img/twitter-logo-silhouette-white.png"/></a>
-                <a class="button hvr-grow" href="https://www.youtube.com/channel/UCa7naaG4ADIbHlz6QOz3MDA"><img src="img/youtube-logo-white.png"/></a>
-                <a class="button hvr-grow" href="https://soundcloud.com/royblair"><img src="img/soundcloud-logo-white.png"/></a>
-                <a class="button hvr-grow" href="http://open.spotify.com/album/0Z9NeEvqeecaLCFUmI4uDw"><img src="img/spotify-white2.png"/></a>
-                <a class="button hvr-grow" href="https://itunes.apple.com/us/album/cat-heaven/1316794586?uo=4&at=1001l3Iq&ct=888915493540"><img id="first" src="img/apple-white2.png"/></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="centered-nav">
-            <ul id="home-navigation">
-                <a href="/shop" id="shop-tab"><li>shop</li></a>
-                <a id="shows-tab"><li>shows</li></a>
-                <a id="music-tab"><li>music</li></a>
-                <a id="credits-tab" href="/credits"><li style="margin-right:0px;">credits</li></a>
-              </ul>
-        </div>
-        <div id="center-title"> 
-          <p style="color:#fff;text-shadow: 4.5px 4.5px rgba(0, 0, 0, 1);opacity: 0.65;">JUNE 8TH</p>
-        </div>
-        <div style="position: absolute;top:0;left:0;">
-          <img style="width: 60px;margin: 27px;" src="img/ch-logo.png" />
-        </div>
-      </div>
-    </div>
-
-  </div>  
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-  <script src="js/main.js"></script>
-  <script src="../js/music.js"></script>
-  <script src="js/home.js"></script>
-</body>
-</html>
--->

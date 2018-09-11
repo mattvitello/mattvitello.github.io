@@ -1,7 +1,7 @@
 html, body{
     height:100%;
     font-family: Arial !important;
-    background-color: #000 !important;
+    background-color: #fff !important;
 }
 
 body {
@@ -18,7 +18,7 @@ a{
 .credits-block p{
     margin-bottom: 5px !important;
     letter-spacing: 1px;
-    color: #d21d46;
+    color: #135e35;
     text-align: center;
 }
 
@@ -43,7 +43,7 @@ a{
 }
 
 .social{
-    color: #d21d46;
+    color: #135e35;
     /*font-size: 0.75em;*/
     font-weight: bold;
     font-size: 12px;
@@ -102,10 +102,20 @@ a{
     font-size: 14px;
     line-height: 1.2em;
     padding-bottom: 35px !important;
+    color: #333;
 }
 
 label{
     font-size: 12px;
+    color: #333;
+}
+input{
+    border: 1px solid #444;
+}
+
+.button-success{
+    color: #333;
+    border-color: #444;
 }
 
 button{
@@ -154,7 +164,7 @@ button{
     #name-container{
         padding-right:15px;
     }
-    #perfume-img{
+    #happy-img{
         width: 100px;
     }
     #links{
@@ -248,7 +258,7 @@ button{
         left: -60px;
         width: 53%;
     }
-    #perfume-img{
+    #happy-img{
         width: 150px;
     }
     #links img{
