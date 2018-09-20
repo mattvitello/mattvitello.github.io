@@ -24,7 +24,7 @@
   /*font-family: 'Source Code Pro';*/
   font-size: 1em;
   position: relative;
-  color:#ff0000eb;
+  color:#082716;
   font-weight: 500;
 }
 
@@ -46,14 +46,14 @@
 }
 
 .music-item:hover{
-  color:#ff0000a1;
+  color:#155f36;
  }
 
 .ch-links{
   margin-top:22px !important;
 }
 .ch-links a img{
-    width: 26px !important; 
+    width: 26px !important;
 }
 
 .pad-me{
@@ -95,7 +95,7 @@
   }
   .ch-links a img{
     margin-right: 23px !important;
-    margin-left: 23px !important; 
+    margin-left: 23px !important;
   }
   iframe{
     width:400px;
@@ -105,34 +105,3 @@
     margin-bottom:1em;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

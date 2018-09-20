@@ -8,52 +8,42 @@
 	text-decoration: underline !important;
 }
 
-#flyers img{
-	width:78%; 
-	height:78%; 
+#tix{
+	margin-top: 50px;
+}
+#tickets-link{
+	font-size: 23px;
+}
+#flyers{
+	display: flex;
+}
+#flyers-m{
+	display: none;
+}
+#fly-wrapper{
+	margin-top:87px;
 }
 
-#flyers-m img{
-	width:60%;
-	height:75%;
+#mlb2-1047248.ml-form-embedContainer{
+	max-width: 88% !important;
+	padding-top: 40px;
 }
+
+.ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit{
+	margin-top: -30px !important;
+}
+
 
 @media(min-width: 0px){
-	#tix{
-		margin-top: 20px;
-	}
-	#tickets-link{
-		font-size: 25px;
-	}
-	#flyers{
-		display: none;
-	}
-	#flyers-m{
-		display: flex;
-	}
-	#flyers img{
-		width:75%; 
-		height:75%; 
-	}
-	#fly-wrapper{
-		margin-top:0px;
+	#flyers img {
+	    width: 280px;
+	    height: 100%;
 	}
 }
 
-@media(min-width: 650px){
-	#tix{
-		margin-top: 50px;
-	}
-	#tickets-link{
-		font-size: 23px;
-	}
-	#flyers{
-		display: flex;
-	}
-	#flyers-m{
-		display: none;
-	}
-	#fly-wrapper{
-		margin-top:87px;
+@media(min-width: 420px){
+	#flyers img {
+	    width: 355px;
+	    height: 100%;
 	}
 }
