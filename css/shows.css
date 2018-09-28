@@ -12,6 +12,19 @@
 	font-weight: bold;
 }
 
+.soldout{
+	cursor: default;
+}
+tr.soldout td:before {
+	content: " ";
+	position: absolute;
+	top: 40%;
+	left: 0;
+	border-bottom: 2.5px solid #ff0000;
+	width: 100%;
+}
+table { border-collapse:collapse }
+tr.soldout td { position:relative }
 
 #tix{
 	margin-top: 50px;
