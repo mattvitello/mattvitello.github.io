@@ -3,123 +3,46 @@
 <head>
   <meta charset="utf-8">
   <meta name="title" content="ROY BLAIR">
-  <meta name="description" content="Cat Heaven out now">
+  <meta name="description" content="Cat Heaven LLC">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta property="og:url"                content="http://royblair.com/" />
   <meta property="og:title"              content="ROY BLAIR" />
-  <meta property="og:description"        content="Cat Heaven out now"/>
-
+  <meta property="og:description"        content="Cat Heaven LLC"/>
   <title>ROY BLAIR</title>
-
-  <link rel="stylesheet" href="css/style2.css">
-  <link rel="icon" href="img/logo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <base href="/">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108381604-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-108381604-1');
   </script>
-</head>
-
+  <script>
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
+<link rel="stylesheet" href="styles.22e9dfbce416f2483b12.css"></head>
 <body>
-  <div class="container-fluid h-100" style="padding: 0;">
-    <div class="row" style="width: 100%;position: absolute;">
-      <div class="col-12 align-self-start" id="title">
-        <div class="row" style="margin-bottom:10px">
-         <div id="name-container" class ="col-md-3 order-sm-1 order-md-2">
-         </div>
-         <div class ="col-md-6 order-sm-2 order-md-1" style="display: inherit;">
-          <div id="link-wrap">
-            <p class="social"><a href="/">HOME</a></p>
-            <p class="social"><a href="/shop">SHOP</a></p>
-            <p class="social"><a href="/shows">SHOWS</a></p>
-            <p class="social"><a href="/music">MUSIC</a></p>
-            <p class="social" style="padding-right:0px;"><a href="/credits">CREDITS</a></p>
-          </div>
-        </div>
-         <div class ="col-md-6 order-sm-2 order-md-1" id="social-row">
-          <div id="links">
-              <a class="button hvr-grow" href="https://itunes.apple.com/us/album/cat-heaven/1316794586?uo=4&amp;at=1001l3Iq&amp;ct=888915493540"><img id="first" src="img/apple-black.png"></a>
-              <a class="button hvr-grow" href="http://open.spotify.com/album/0Z9NeEvqeecaLCFUmI4uDw"><img src="img/spotify-black.png"></a>
-              <a class="button hvr-grow" href="https://soundcloud.com/royblair"><img src="img/soundcloud-logo-black.png"></a>
-              <a class="button hvr-grow" href="https://www.youtube.com/channel/UCa7naaG4ADIbHlz6QOz3MDA"><img src="img/youtube-logo-black.png"></a>
-              <a class="button hvr-grow" href="https://twitter.com/royblair"><img src="img/twitter-logo-silhouette-black.png"></a>
-              <a class="button hvr-grow" href="https://www.instagram.com/royblair/"><img src="img/instagram-logo-black.png"></a>
-              <a class="button hvr-grow" href="mailto:royblairmgmt@gmail.com"><img id="last" src="img/close-envelope-black.png"></a>
-            </div>
-        </div>
-      </div>
-      </div>
-  </div>
-  <div class = "row justify-content-center" style="padding-top:0px !important;height: 100%;">
-    <div class="align-self-center" style="margin-top: 330px;">
-      <div class="col-12" style="text-align: center; margin-top:5px; margin-bottom: 45px;">
-        <img id="happy-img" src="img/happy-font.png">
-      </div>
-      <div class="col-12 vid" style="text-align: center">
-       <!-- <iframe style="z-index: 3; position: relative;" src="https://www.youtube.com/embed/ZIuxbHOeeA0?rel=0" frameborder="0" allowfullscreen></iframe>-->
-        <iframe style="z-index: 3; position: relative;" src="https://www.youtube.com/embed/gUJr4QVWd7M?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <div class="credits-block" style="margin-top:80px; height: 100% !important;">
-          <p class="bold">SONG CREDITS</p>
-          <p>(R. BLAIR)</p>
-          <p>PRODUCTION - ZACH FOGARTY</p>
-          <p>DRUM PROGRAMMING - ROY BLAIR</p>
-          <p>GUITAR - FINN ORRELL</p>
-          <p>ADDITIONAL PRODUCTION - NATALIE GREEN & ENDER TOI</p>
-          <p>MIX - ZACH FOGARTY</p>
-          <p style="padding-bottom: 80px;">MASTER - KENNY GOURMET</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-  <div id="contactForm">
-    <div id="sign-me-up">
-      <div class="row" id="sign-up-title">
-        <div class="col-12" style="padding-left:0px; padding-right:0px;">
-          Email Sign Up
-        </div>
-      </div>
-      <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
-      action="https://script.google.com/macros/s/AKfycbxqFP1nC3DE26jxOoHF1kfjnqhnLoo7UZZlxOI7/exec">
-      <fieldset class="pure-group">
-        <div style="padding-bottom: 25px;">
-        <label for="city" style="width:79.3%;">City</label>
-        <label for="state" style="">State</label>
-        <input id="city" name="city" type="text" value=""
-         style="width:75%" />
-        <input id="state" name="state" type="text" value=""
-         style="width:20%;float:right;" />
-      </div>
-        <label for="email">Email Address *</label>
-        <input id="email" name="email" type="email" value=""
-        required style="width:100%" />
-        <span id="email-invalid" style="display:none">
-        Must be a valid email address</span>
-      </fieldset>
-      <button class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;submit</button>
-      </form>
-
-      <!-- Customise the Thankyou Message People See when they submit the form: -->
-      <div style="display:none;" id="thankyou_message">
-        <p style="font-size: 12px">Thanks! You've been added to the mailing list</p>
-      </div>
-    </div>
-  </div>
-
-<!--Javascript-->
-<script src="js/main.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
-<script src="js/home.js"></script>
-<!--<script src="js/jquery.iframetracker.js"></script>-->
-</body>
+  <rb-root></rb-root>
+  <!--scripts-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://static.mailerlite.com/js/w/webforms.min.js?vaa4d608450783acdc64d5338ff94f6d5" type="text/javascript"></script>
+  <script>
+    function ml_webform_success_1058500() {
+        var $ = ml_jQuery || jQuery;
+        $('.ml-subscribe-form-1058500 .row-success').show();
+        $('.ml-subscribe-form-1058500 .row-form').hide();
+    }
+  </script>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.2f4a59095805af02bd79.js"></script><script type="text/javascript" src="main.6ef8e2310e789da1a1b8.js"></script></body>
 </html>
