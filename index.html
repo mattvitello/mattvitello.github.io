@@ -31,27 +31,28 @@
 </script>
 <link rel="stylesheet" href="styles.a5d8813c4e9399d31600.css"></head>
 <body>
-  <!--<div id="loader" style="width: 100%; height: 100%; background-color: #000;position: absolute; z-index: 10000;overflow: hidden;margin:0;padding:0;">
+  <div id="loader" style="width: 100%; height: 100%; background-color: #000;position: absolute; z-index: 10000;overflow: hidden;margin:0;padding:0;">
     <div style="position: absolute;top: 0;bottom: 0;margin: auto;height: 48%;height: fit-content;width:100%">
       <img id="ch-load" style="width:100%; max-width: 600px; margin:0 auto; display:block;margin-top:-20px"/>
       <p style="color:#fff; text-align:center;font-size: 1.35em;font-family: monospace;letter-spacing: -1px;">
         <span id="percent">0</span><span>%</span>
       </p>
     </div>
-  </div>-->
-  <rb-root id="main"> <!--style="display:none"-->
+  </div>
+  <rb-root id="main" style="opacity:0;"> <!--style="display:none"-->
     <div style="width: 100%; height: 100vh; background-color: #000;"></div>
   </rb-root>
 
 
-<!--  <script>
+<script>
     var loadImg = document.getElementById('ch-load');
     loadImg.onload = function(){
       var loader = document.getElementById('loader');
       var main = document.getElementById('main');
       setTimeout(function() {
-        loader.style.display = 'none';
-         main.style.display = 'inline';
+        loader.style.opacity = '0';
+         main.style.opacity = '1';
+
       }, 3200);   //3200
 
       var valueElement = document.getElementById('percent');
@@ -74,7 +75,7 @@
       }, framerate);
     };
     loadImg.src = "assets/img/catheaven-loader.gif";
-  </script>-->
+  </script>
   <!--scripts-->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -88,5 +89,5 @@
         $('.ml-subscribe-form-1058500 .row-form').hide();
     }
   </script>
-<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.7a0e6866a34e280f48e7.js"></script><script type="text/javascript" src="main.70e70ba3331d165fbbfc.js"></script></body>
+<script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.7a0e6866a34e280f48e7.js"></script><script type="text/javascript" src="main.0a125223854122090ae1.js"></script></body>
 </html>
